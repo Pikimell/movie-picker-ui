@@ -1,11 +1,11 @@
 import { Suspense } from 'react';
-import AppBar from './AppBar/AppBar';
+import Navigation from './Navigation/Navigation';
 
 export const Layout = ({ children }) => {
   return (
-    <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 16px' }}>
+    <div className="main-container">
       <Suspense fallback={null}>{children}</Suspense>
-      <AppBar />
+      <Navigation />
     </div>
   );
 };

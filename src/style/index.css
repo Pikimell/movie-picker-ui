@@ -22,3 +22,27 @@ body {
 * {
   touch-action: manipulation !important;
 }
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 375px;
+  max-width: 375px;
+}
