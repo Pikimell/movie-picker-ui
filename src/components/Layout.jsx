@@ -4,8 +4,17 @@ import Navigation from './Navigation/Navigation';
 export const Layout = ({ children }) => {
   return (
     <div className="main-container">
-      <Suspense fallback={null}>{children}</Suspense>
-      <Navigation />
+      <Suspense
+        fallback={
+          <>
+            <div></div>
+            <Navigation />
+          </>
+        }
+      >
+        {children}
+        <Navigation />
+      </Suspense>
     </div>
   );
 };
